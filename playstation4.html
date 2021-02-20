@@ -1,0 +1,59 @@
+
+.container {
+position:relative; width:200px; height:150px;
+}
+.container img {
+position:absolute; top:0; left:0; opacity:0;
+}
+.container:hover img {
+-webkit-animation-name: slider; -webkit-animation-timing-function: ease;
+-webkit-animation-duration: 10s; -webkit-animation-iteration-count: infinite;
+animation-name: slider; animation-timing-function: ease;
+animation-duration: 10s; animation-iteration-count: infinite;
+}
+@-webkit-keyframes slider {
+0% {opacity:0;-webkit-transform: rotate(0) scale(0.5) skew(30deg,20deg);}
+20% {opacity:1;-webkit-transform: rotate(0) scale(1) skew(0deg,0deg);}
+30% {opacity:0;-webkit-transform: rotate(-360deg) scale(0) skew(0deg,0deg);}
+100% {opacity:0;-webkit-transform: rotate(0) scale(0.5) skew(30deg,20deg);}
+}
+@keyframes slider {
+0% {opacity:0;transform: rotate(0) scale(0.5) skew(30deg,20deg);}
+20% {opacity:1;transform: rotate(0) scale(1) skew(0deg,0deg);}
+30% {opacity:0;transform: rotate(-360deg) scale(0) skew(0deg,0deg);}
+100% {opacity:0;transform: rotate(0) scale(0.5) skew(30deg,20deg);}
+}
+.container img:nth-of-type(1) {-webkit-animation-delay: 8s;animation-delay: 8s;}
+.container img:nth-of-type(2) {-webkit-animation-delay: 6s;animation-delay: 6s;}
+.container img:nth-of-type(3) {-webkit-animation-delay: 4s;animation-delay: 4s;}
+.container img:nth-of-type(4) {-webkit-animation-delay: 2s;animation-delay: 2s;}
+.container img:nth-of-type(5) {-webkit-animation-delay: 0s;animation-delay: 0s;}
+
+.container .hovertext {
+position: absolute; top:60px; left:30px;
+font-size:1.5em; color: rgba(255,255,255,1);
+-webkit-transition: all 0.7s ease; transition: all 0.7s ease;
+}
+.container:hover .hovertext {
+top:20px; color: rgba(255,255,255,0);
+-webkit-transition: all 0.7s ease; transition: all 0.7s ease;
+}</style>
+</head>
+<body>
+<div class="container">
+<img src="D:\PHP Program Listing\MM12\Abhishek\Project\Sony\playstation-4-pro-feature-banner-call-of-duty-inifinite-warfare-us-04nov16.jpg" alt="img5">
+<img src="D:\PHP Program Listing\MM12\Abhishek\Project\Sony\XCRHy7.png" alt="img4">
+<img src="D:\PHP Program Listing\MM12\Abhishek\Project\Sony\maxresdefault.jpg" alt="img3">
+<img src="D:\PHP Program Listing\MM12\Abhishek\Project\Sony\ps4-pro-test-01-1.jpg" alt="img2">
+<img src="D:\PHP Program Listing\MM12\Abhishek\Project\Sony\HWopIPV.jpg" alt="img1">
+<p class="hovertext">Hover here</p>
+
+
+
+
+
+
+
+
+
+
